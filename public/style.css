@@ -1,1 +1,2 @@
-
+body { font-family: system-ui, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; }
+a { display: inline-block; margin-right: 12px; padding: 8px 16px; background: #222; color: #fff; text-decoratbutton { padding: 8px 16px; border-radius: 6px; border: none; background: #b00020; color: #fff; cursor: point
