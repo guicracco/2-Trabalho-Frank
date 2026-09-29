@@ -6,7 +6,7 @@ if (k === name) return v.join("=");
 }
 return null;
 }
-5
+
 export const txCookie = (v) =>
 `__Host-oauth-tx=${v}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=600`;
 export const clearTxCookie =
