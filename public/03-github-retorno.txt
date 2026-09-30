@@ -1,2 +1,0 @@
-Homepage URL: https://2-trabalho-frank.pages.dev
-Authorization callback URL: https://2-trabalho-frank.pages.dev/oauth/callback/github
