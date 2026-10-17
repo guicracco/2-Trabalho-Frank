@@ -9,30 +9,7 @@
 <body>
   <div id="clima">Carregando clima...</div>
 
-<script>
-  async function carregarClima(cidade) {
-    const caixa = document.getElementById("clima");
-    try {
-      const resposta = await fetch("/api/clima?cidade=" + encodeURIComponent(cidade));
-      const dados = await resposta.json();
 
-      if (!resposta.ok) {
-        caixa.textContent = dados.erro || "Erro ao carregar o clima";
-        return;
-      }
-
-      caixa.innerHTML =
-        '<img src="https://openweathermap.org/img/wn/' + dados.icone + '@2x.png" alt="">' +
-        "<strong>" + dados.cidade + "</strong><br>" +
-        Math.round(dados.temperatura) + " °C, " + dados.descricao + "<br>" +
-        "Sensação de " + Math.round(dados.sensacao) + " °C | Umidade de " + dados.umidade + "%";
-    } catch (e) {
-      caixa.textContent = "Erro ao carregar o clima";
-    }
-  }
-
-  carregarClima("Curitiba");
-</script>
 <main>
 <h1>Laboratório de autenticação</h1>
 <p id="status">A sessão ainda não foi consultada.</p>
